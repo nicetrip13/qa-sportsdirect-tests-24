@@ -25,11 +25,10 @@ public class SportsDirectCom {
     private final By MAX_PRICE_INPUT_FIELD = By.id("PriceFilterTextEntryMax");
     private final By EMAIL_INPUT_FIELD = By.xpath(".//input[@type = 'email']");
     private final By EMAIL_SUBMIT_BTN = By.xpath(".//button[@type = 'submit']");
-    private final By PRICE_CHECK_BTN = By.id("PriceFilterTextEntryApply"); //GO_BTN?
-    private final By ADD_TO_BAG_BTN = By.id("ProductStandardAddToBag"); //AAA!
+    private final By PRICE_CHECK_BTN = By.id("PriceFilterTextEntryApply");
+    private final By ADD_TO_BAG_BTN = By.id("ProductStandardAddToBag");
     private final By CART_ICON = By.id("bagQuantityContainer");
     private final By CART_SUBMENU_VIEWBAG_BTN = By.id("aViewBag");
-    private final By SD_ICON = By.xpath(".//a[@href = '/']"); //locator not works,the same ()work!
     private final By MENS_MENU = By.id("lnkTopLevelMenu_3956400");
     private final By UNDERWEAR_BTN = By.xpath(".//a[contains(@href, '/mens/clothing/underwear')]");
     private final By CALVIN_KLEIN_CHECKBOX = By.xpath(".//a[@href = '/mens/clothing/underwear/calvin-klein']");
