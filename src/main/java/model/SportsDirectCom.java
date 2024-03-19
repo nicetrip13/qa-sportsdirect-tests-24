@@ -36,7 +36,7 @@ public class SportsDirectCom {
     private final By BLK_BLU_COLOR_ITEM = By.xpath(".//img[@alt = 'Blk/Blu 6ZR']");
     private final By L_SIZE_BTN = By.xpath(".//li[@data-text = 'Large']");
     private final By CHECKOUT_BTN = By.id("aCheckout"); //not works
-    private final By TEEN_HOODIE = By.xpath(".//a[@href = '/adidas-bl-2-hoodie-537391#colcode=53739103']");
+    private final By TEEN_HOODIE = By.xpath(".//a[@href = '/adidas-fi-aop-hd-537394#colcode=53739403']");
     private final By MIN_AGE_SIZE_BTN = By.id("liItem");
     private final By PAY_BTN_IN_CART = By.id("divContinueSecurely");
     private final By PRICES_FILTERED_LIST = By.id("navlist");
@@ -70,6 +70,7 @@ public class SportsDirectCom {
         minPriceField.sendKeys("25");
         WebElement maxPriceField = browser.findElement(MAX_PRICE_INPUT_FIELD);
         maxPriceField.sendKeys("35");
+        wait.until(ExpectedConditions.presenceOfElementLocated(PRICE_CHECK_BTN));
         WebElement goBtn = browser.findElement(PRICE_CHECK_BTN);
         goBtn.click();
         //check that filter works - how? boolean?
