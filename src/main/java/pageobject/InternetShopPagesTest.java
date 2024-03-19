@@ -1,7 +1,9 @@
 package pageobject;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pageobject.pages.HomePage;
+import pageobject.pages.KidsPage;
 
 public class InternetShopPagesTest {
     @Test
@@ -10,6 +12,10 @@ public class InternetShopPagesTest {
         baseFunc.openURL("sportsdirect.com");
         HomePage homePage = new HomePage(baseFunc);
         homePage.acceptCookies();
-        homePage.kidsMenuOpen();
+        homePage.kidsPageOpen();
+
+        KidsPage kidsPage = new KidsPage(baseFunc);
+        kidsPage.hoodiesCatalogOpen();
+
     }
 }

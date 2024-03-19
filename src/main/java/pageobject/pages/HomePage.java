@@ -9,5 +9,5 @@ public class HomePage {
     private BaseFunc baseFunc;
     public HomePage(BaseFunc baseFunc){this.baseFunc = baseFunc;}
     public void acceptCookies(){ baseFunc.click(ACCEPT_COOKIES_BTN);}
-    public void kidsMenuOpen(){baseFunc.click(KIDS_MENU);}
+    public void kidsPageOpen(){baseFunc.click(KIDS_MENU);}
 }
