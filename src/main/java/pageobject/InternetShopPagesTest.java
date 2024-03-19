@@ -3,6 +3,7 @@ package pageobject;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pageobject.pages.HomePage;
+import pageobject.pages.HoodiesCatalogPage;
 import pageobject.pages.KidsPage;
 
 public class InternetShopPagesTest {
@@ -16,6 +17,9 @@ public class InternetShopPagesTest {
 
         KidsPage kidsPage = new KidsPage(baseFunc);
         kidsPage.hoodiesCatalogOpen();
+
+        HoodiesCatalogPage hoodiesCatalogPage = new HoodiesCatalogPage(baseFunc);
+
 
     }
 }
