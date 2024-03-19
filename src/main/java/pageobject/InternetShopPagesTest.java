@@ -19,7 +19,6 @@ public class InternetShopPagesTest {
         kidsPage.hoodiesCatalogOpen();
 
         HoodiesCatalogPage hoodiesCatalogPage = new HoodiesCatalogPage(baseFunc);
-
-
+        hoodiesCatalogPage.setPriceFilter(25,35);
     }
 }

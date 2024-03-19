@@ -11,6 +11,10 @@ public class HoodiesCatalogPage {
     private final By PRICE_TO = By.id("PriceFilterTextEntryMax");
 
     public void setPriceFilter(double priceFrom,double priceTo) {
+        baseFunc.typeText(PRICE_FROM, String.valueOf(priceFrom));
+        baseFunc.pressEnter(PRICE_FROM);
+        baseFunc.typeText(PRICE_TO, String.valueOf(priceTo));
+        baseFunc.pressEnter(PRICE_TO);
     }
 
 }

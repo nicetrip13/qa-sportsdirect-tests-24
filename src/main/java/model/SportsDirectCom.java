@@ -73,7 +73,6 @@ public class SportsDirectCom {
         wait.until(ExpectedConditions.presenceOfElementLocated(PRICE_CHECK_BTN));
         WebElement goBtn = browser.findElement(PRICE_CHECK_BTN);
         goBtn.click();
-        //check that filter works - how? boolean?
         WebElement teenHoodie = browser.findElement(TEEN_HOODIE);
         teenHoodie.click();
         WebElement minAgeSizeBtn = browser.findElement(MIN_AGE_SIZE_BTN);
